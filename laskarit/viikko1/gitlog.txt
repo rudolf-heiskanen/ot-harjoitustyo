@@ -1,0 +1,118 @@
+commit 7fa0eab197107c290beda58e9cf7aa104781b53c
+Author: Rudolf Heiskanen <r.sananjalka@gmail.com>
+Date:   Mon Mar 13 22:36:53 2023 +0200
+
+    22
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 503fbf67df358a1dc7c5d254fa423c62be17c984
+Author: Rudolf Heiskanen <r.sananjalka@gmail.com>
+Date:   Mon Mar 13 22:32:52 2023 +0200
+
+    lisättiin tiedostoja ja filet
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit d00aac4cafbc5b3304deb740bc89dd06a6eac598
+Author: Rudolf Heiskanen <r.sananjalka@gmail.com>
+Date:   Mon Mar 13 22:31:08 2023 +0200
+
+    deletointeja
+
+ tiedostoja/file1, | 0
+ tiedostoja/file2, | 0
+ tiedostoja/file3  | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 75e95afa6131c723f8c1990ed010229e3a744a01
+Author: Rudolf Heiskanen <r.sananjalka@gmail.com>
+Date:   Mon Mar 13 22:26:16 2023 +0200
+
+    lisättiin tiedostoja
+
+ tiedostoja/file1, | 0
+ tiedostoja/file2, | 0
+ tiedostoja/file3  | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit a305ee80b7b586efffbc3d0157bacd28423a4c84
+Author: Rudolf Heiskanen <r.sananjalka@gmail.com>
+Date:   Mon Mar 13 20:42:31 2023 +0200
+
+    lisäystä ja poistoa
+
+ eka.txt    | 3 ++-
+ kolmas.txt | 3 ++-
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+commit 8578e41ed190e7b462ade5c58e88306981d55021
+Author: Rudolf Heiskanen <r.sananjalka@gmail.com>
+Date:   Mon Mar 13 20:39:23 2023 +0200
+
+    uudelleennimettiin tiedosto --> eka
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 651c8b38bc463f4bc1b664d1248869473739aeea
+Author: Rudolf Heiskanen <r.sananjalka@gmail.com>
+Date:   Mon Mar 13 20:37:47 2023 +0200
+
+    toinen poistettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit cf9080ca56aa8d66ec59378266190416daee7bae
+Author: Rudolf Heiskanen <r.sananjalka@gmail.com>
+Date:   Mon Mar 13 20:34:31 2023 +0200
+
+    viipun vaapun
+
+ tiedosto.txt | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+
+commit 41c448bbcd6164a9276b26b3f0f934694af08e76
+Author: Rudolf Heiskanen <r.sananjalka@gmail.com>
+Date:   Mon Mar 13 20:29:59 2023 +0200
+
+    lorem ipsum
+
+ tiedosto.txt | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+commit d9f6f24eb3cc32d528a717ae66c9a747407dc541
+Author: Rudolf Heiskanen <r.sananjalka@gmail.com>
+Date:   Mon Mar 13 20:03:24 2023 +0200
+
+    toista muokattu, lisätty kolmas
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit fcad8c8c62a0a53031a79f462c98272071171c22
+Author: Rudolf Heiskanen <r.sananjalka@gmail.com>
+Date:   Mon Mar 13 19:56:53 2023 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit d4bce74ebab6ba9620d0464dae48fe1351006bfa
+Author: Rudolf Heiskanen <r.sananjalka@gmail.com>
+Date:   Mon Mar 13 19:13:59 2023 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
