@@ -9,6 +9,7 @@ Sovellus on monofoninen eli yksiääninen, perinteinen syntetisaattori, jota voi
 - Käyttäjä voi tietokoneen näppäimistöllä vaihtaa sävelen korkeutta ja määrittää nuotin pituuden vapauttamalla näppäimen
 
 ### Laajennettu versio (kurssin lopussa)
+Seuraavista, ylimääräisistä ominaisuuksista toteutetaan se osa mikä ehditään
 - Äänen voi valita ainakin siniaallon, neliöaallon ja sahalaita-aallon väliltä.
 - Käytössä on myös filtteri ja envelope-generaattori äänenvoimakkuudelle ja filtterin frekvenssille.
 - Asetuksia voidaan muokata graafisella käyttöliittymällä. Käyttöliittymä myös näyttää aaltomuotovaihtoehdot kuvina.
