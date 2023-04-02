@@ -7,7 +7,7 @@ class Synthengine:
         self.pressednotes = []
         self.playingnotes = []
         self.voices = []
-        self.oscillator_select = 2
+        self.oscillator_select = 1
         self.samplerate = samplerate
         self.buffersize = buffersize
         self.mode = "mono"

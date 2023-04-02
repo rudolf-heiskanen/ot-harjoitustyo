@@ -1,4 +1,3 @@
-import pyaudio
 import pygame
 import numpy as np
 from time import time
@@ -8,7 +7,7 @@ from synth.playback import Playbackdevice
 
 class Synthesizer:
     def __init__(self):
-        self.buffersize = 256
+        self.buffersize = 4096
         self.samplerate = 44100
 
         self.synthengine = Synthengine(self.buffersize, self.samplerate)

@@ -7,11 +7,12 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pyaudio = "^0.2.13"
 pygame = "^2.3.0"
 numpy = "^1.24.2"
 thorpy = "^1.8.1"
 invoke = "^2.0.0"
+simpleaudio = "^1.0.4"
+sounddevice = "^0.4.6"
 
 
 [tool.poetry.group.dev.dependencies]
