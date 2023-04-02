@@ -1,9 +1,8 @@
-# Rudolfin ohjelmistotekniikkarepositorio
+#SyntsaSyntikka
 
-Tästä repositoriosta löytyy alakansiot [harjoitustyölle](https://github.com/rudolf-heiskanen/rudolf-ohjelmistotekniikka/tree/main/harjoitustyo) ja [laskareille](https://github.com/rudolf-heiskanen/rudolf-ohjelmistotekniikka/tree/main/laskarit)
+Tämä ohjelma on ohjelmistosyntetisaattori, siis äänisynteesiä hyödyntävä soitin joka on toteutettu ohjelmallisesti. Syntetisaattoria voi soittaa tietokoneen näppäimistöllä, ja syntetisaattorin ääntä voi muokata käyttöliittymän parametreilla. 
 
-
-## Viikon 1 harjoituksessa tehdyt linkit:
-
-linkki tiedostoon [komentorivi.txt](https://github.com/rudolf-heiskanen/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
-linkki tiedostoon [gitlog.txt](https://github.com/rudolf-heiskanen/ot-harjoitustyo/blob/main/laskarit/viikko1/gitlog.txt)
+## Dokumentaatio
+- [Vaatimusmäärittely](https://github.com/rudolf-heiskanen/rudolf-ohjelmistotekniikka/blob/main/harjoitustyo/dokumentaatio/vaatimusmaarittely.md)
+- [Tyoaikakirjanpito](https://github.com/rudolf-heiskanen/rudolf-ohjelmistotekniikka/blob/main/harjoitustyo/dokumentaatio/vaatimusmaarittely.md)
+- [Changelog]()
