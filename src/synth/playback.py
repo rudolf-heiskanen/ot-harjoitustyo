@@ -1,6 +1,6 @@
 import numpy as np
-import simpleaudio as sa
-import sounddevice as sd
+#import simpleaudio as sa
+#import sounddevice as sd
 import pygame
 import time
 from threading import Thread
@@ -32,6 +32,7 @@ class Playbackdevice:
 
 
     def play_pygame(self, samples):
+        print(pygame.mixer.get_init())
         #self.now = time.time()
         #if self.now - self.last >= self.duration:
 
@@ -43,25 +44,26 @@ class Playbackdevice:
         sound.play()
         #time.sleep(self.duration)
 
-    def play_sounddevice(self, samples):
-        if abs(max(samples)) > 1:
-            samples *= (1/abs(max(samples)))
-        samples *= self.vol * 32767
-        samples_as_16bit = samples.astype(np.int16)
-        sd.play(samples_as_16bit, blocking=True)
-        time.sleep(self.buffersize / self.samplerate)
-        sd.stop()
+    #def play_sounddevice(self, samples):
+    #    if abs(max(samples)) > 1:
+    #        samples *= (1/abs(max(samples)))
+    #    samples *= self.vol * 32767
+    #    samples_as_16bit = samples.astype(np.int16)
+    #    sd.play(samples_as_16bit, blocking=True)
+    #    time.sleep(self.buffersize / self.samplerate)
+    #    sd.stop()
     
-    def play_simpleaudio(self, samples):
-        if abs(max(samples)) > 1:
-            samples *= (1/abs(max(samples)))
-        samples *= self.vol * 32767
-        samples_as_16bit = samples.astype(np.int16)
-        play_obj = sa.play_buffer(samples_as_16bit, 2, 2, self.samplerate)
-        #play_obj.wait_done()
-        time.sleep(self.duration)
+    #def play_simpleaudio(self, samples):
+    #    if abs(max(samples)) > 1:
+    #        samples *= (1/abs(max(samples)))
+    #    samples *= self.vol * 32767
+    #    samples_as_16bit = samples.astype(np.int16)
+    #    play_obj = sa.play_buffer(samples_as_16bit, 2, 2, self.samplerate)
+    #    #play_obj.wait_done()
+    #    time.sleep(self.duration)
     
     def mixer_init(self):
-        pygame.mixer.quit()
-        pygame.mixer.init(frequency=self.samplerate,size=-16,channels=1, buffer=self.buffersize)
+        pass
+        #pygame.mixer.quit()
+        #pygame.mixer.init(frequency=self.samplerate,size=-16,channels=1, buffer=self.buffersize)
 
