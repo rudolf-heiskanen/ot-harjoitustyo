@@ -12,7 +12,7 @@ class Playbackdevice:
         self.vol = 0.3
         #self.mixer = pygame.mixer.pre_init(frequency=self.samplerate,size=-16,channels=1, buffer=self.buffersize)
         pygame.mixer.pre_init(frequency=self.samplerate,size=-16,channels=1, buffer=self.buffersize)
-        sd.default.samplerate = self.samplerate
+        #sd.default.samplerate = self.samplerate
         self.duration = self.buffersize / self.samplerate / 1.05
         self.last = 0
 
