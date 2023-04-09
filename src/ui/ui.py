@@ -1,22 +1,14 @@
 import pygame
+from ui.keypresses import Keyboardinput
 
 class Ui:
     def __init__(self):
-        self.keypresses = []
-        self.notes = []
-    
-    def read_keypresses_temporary(self, event):
-        if event.type == pygame.KEYDOWN:
-            self.keypresses.append("A")
-        elif event.type == pygame.KEYUP:
-            self.keypresses.pop()
+        self.keyboardinput = Keyboardinput()
+
+    def read_keypresses(self, event):
+        self.keyboardinput.read_keypresses(event)
     
     def get_notes(self):
-        self.calculate_notes_temporary()
-        return self.notes
+        notes = self.keyboardinput.get_notes()
+        return notes
     
-    def calculate_notes_temporary(self):
-        self.notes = []
-        for press in self.keypresses:
-            if press == "A":
-                self.notes.append("c3")

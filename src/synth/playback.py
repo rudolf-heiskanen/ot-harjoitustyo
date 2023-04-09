@@ -32,7 +32,6 @@ class Playbackdevice:
 
 
     def play_pygame(self, samples):
-        print(pygame.mixer.get_init())
         #self.now = time.time()
         #if self.now - self.last >= self.duration:
 

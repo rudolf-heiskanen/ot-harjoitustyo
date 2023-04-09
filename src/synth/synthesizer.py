@@ -7,7 +7,7 @@ from synth.playback import Playbackdevice
 
 class Synthesizer:
     def __init__(self):
-        self.buffersize = 512
+        self.buffersize = 1024
         self.samplerate = 44100
         
         self.duration = self.buffersize / self.samplerate / 1.0
@@ -35,7 +35,7 @@ class Synthesizer:
             for event in pygame.event.get():
                 if self.check_for_exit(event):
                     running = False
-                self.ui.read_keypresses_temporary(event)
+                self.ui.read_keypresses(event)
             self.clock = time()
             self.synthengine.get_time(self.clock)
 
