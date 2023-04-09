@@ -7,8 +7,12 @@ from synth.playback import Playbackdevice
 
 class Synthesizer:
     def __init__(self):
-        self.buffersize = 4096
+        self.buffersize = 512
         self.samplerate = 44100
+        
+        self.duration = self.buffersize / self.samplerate / 1.0
+        self.last = 0
+        self.clock = 0
 
         self.synthengine = Synthengine(self.buffersize, self.samplerate)
         self.ui = Ui()
@@ -22,19 +26,26 @@ class Synthesizer:
     
     def run(self):
         pygame.init()
+        self.playbackdevice.mixer_init()
         screen = pygame.display.set_mode((400,400))
         running = True
+        samples = self.synthengine.play_notes()
 
         while running:
             for event in pygame.event.get():
                 if self.check_for_exit(event):
                     running = False
                 self.ui.read_keypresses_temporary(event)
+            self.clock = time()
+            self.synthengine.get_time(self.clock)
 
             notes = self.ui.get_notes()
             self.synthengine.register_notes_temporary(notes)
-            samples = self.synthengine.play_notes()
-            self.playbackdevice.play(samples)
+
+            if self.clock - self.last >= self.duration:
+                self.playbackdevice.play(samples)
+                samples = self.synthengine.play_notes()
+                self.last = self.clock
 
             
             

@@ -11,6 +11,10 @@ class Synthengine:
         self.samplerate = samplerate
         self.buffersize = buffersize
         self.mode = "mono"
+        self.clock = 0
+    
+    def get_time(self, clock):
+        self.clock = clock
 
 
     def play_notes(self):
@@ -18,6 +22,7 @@ class Synthengine:
         frequencies = self.calculate_frequencies(notes)
         self.oscillators = self.calculate_voices(frequencies, self.voices)
         samples_list = [voice.play() for voice in self.voices]
+        #samples = self.sum_samples_temp(samples_list)
         samples = self.sum_samples_temp(samples_list)
         return samples
         

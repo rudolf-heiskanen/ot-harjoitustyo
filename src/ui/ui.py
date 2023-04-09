@@ -16,6 +16,7 @@ class Ui:
         return self.notes
     
     def calculate_notes_temporary(self):
+        self.notes = []
         for press in self.keypresses:
             if press == "A":
                 self.notes.append("c3")
