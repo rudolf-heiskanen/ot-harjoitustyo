@@ -1,10 +1,11 @@
 import pygame
 
+
 class Keyboardinput:
     def __init__(self):
         self.keypresses = []
         self.notes = []
-    
+
     def read_keypresses(self, event):
         key = ""
         if event.type == pygame.KEYDOWN or event.type == pygame.KEYUP:
@@ -38,7 +39,7 @@ class Keyboardinput:
             self.keypresses.append(key)
         elif event.type == pygame.KEYUP:
             self.keypresses.remove(key)
-    
+
     def calculate_notes(self):
         temp_list = []
 
@@ -73,7 +74,4 @@ class Keyboardinput:
 
     def get_notes(self):
         self.calculate_notes()
-        print(self.keypresses)
-        print(self.notes)
         return self.notes
-    

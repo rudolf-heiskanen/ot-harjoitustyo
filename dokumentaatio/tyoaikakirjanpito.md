@@ -5,4 +5,6 @@
 | 24.3.   | 4        | prototyyppaus |
 | 28.3.   | 2        | ohjelmointi   |
 | 30.3.   | 4        | playbackin troubleshoottaamista epäonnisesti |
+| 2.4.    | 3        | playbackin troubleshoottaamista onnistuneesti |
+| 10.4.   | 2        | eri sävelten soittaminen näppäimistöllä lisätty |
 

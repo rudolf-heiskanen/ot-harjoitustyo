@@ -3,13 +3,14 @@ import numpy as np
 from time import time
 from synth.synthengine import Synthengine
 from ui.ui import Ui
-from synth.playback import Playbackdevice 
+from synth.playback import Playbackdevice
+
 
 class Synthesizer:
     def __init__(self):
-        self.buffersize = 1024
+        self.buffersize = 2048
         self.samplerate = 44100
-        
+
         self.duration = self.buffersize / self.samplerate / 1.0
         self.last = 0
         self.clock = 0
@@ -23,11 +24,10 @@ class Synthesizer:
             if event.key == pygame.K_ESCAPE:
                 return True
         return False
-    
+
     def run(self):
         pygame.init()
-        self.playbackdevice.mixer_init()
-        screen = pygame.display.set_mode((400,400))
+        screen = pygame.display.set_mode((400, 400))
         running = True
         samples = self.synthengine.play_notes()
 
@@ -46,6 +46,3 @@ class Synthesizer:
                 self.playbackdevice.play(samples)
                 samples = self.synthengine.play_notes()
                 self.last = self.clock
-
-            
-            

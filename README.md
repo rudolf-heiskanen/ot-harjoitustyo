@@ -33,4 +33,8 @@ poetry run invoke coverage-report
 
 Näin luotu testikattavuusraportti ilmestyy kansioon "htmlcov".
 
-
+### Koodin laadun tarkistaminen
+Ohjelman koodin laatutarkitsuksen voi suorittaa komennolla
+```bash
+poetry run invoke lint
+```

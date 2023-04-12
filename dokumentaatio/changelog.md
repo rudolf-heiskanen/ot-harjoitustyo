@@ -13,5 +13,12 @@
 	- Playbackdevice, joka vastaa synthenginen generoiman audion soittamisesta tietokoneen kaiuttimista
 	- Ui, joka tällä hetkellä vain lukee PyGamen avulla näppäimistön syötettä soittamista varten
 
-### Muita huomioita
+### Muita huomioita:
 Windows-koneelta linux-koneelle siirtyessä huomasin, että alunperin käyttämäni audiokirjasto PyAudio ei toimi ilman riippuvuuksia, joten tällä hetkellä äänenlaatu on huono, ja asialle toivottavasti onnistutaan tekemään jotakin tulevaisuudessa.
+
+## Viikko 4:
+### Uusia ominaisuuksia:
+- Käyttäjä pystyy soittamaan eri säveliä käyttäen tietokoneen näppäimistöä pianon koskettimien tavoin, terminaaliin tulostuvan ohjeen mukaan.
+
+### Muita huomioita:
+Nyt audio toimii linuxilla pygamen audio-ominaisuutta käyttäen. Ääni saattaa hieman pätkiä joillain laitteilla tai ohjelman käynnistyskerroilla. Tämän korjaaminen vaatisi kuitenkin luultavasti niin suurta optimointia, että tyydyn nyt tähän tilanteeseen tämän kurssin osalta. Audiossa on myös pieni viive, johon voi vaikuttaa audiobufferin kokoa muuttamalla. Pätkintä kuitenkin pahenee bufferin kokoa pienentäessä, joten näiden asioiden välillä on tasapainoiltava. Käyttäjälle voitaisiin antaa vaihtoehto käynnistäessä valita bufferin koko muutamasta vaihtoehdosta.
