@@ -5,4 +5,5 @@ classDiagram
         -samplerate
 	-buffersize
     }
+    class Synthengine
 ```
