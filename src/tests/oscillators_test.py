@@ -13,6 +13,37 @@ class TestOscillator(unittest.TestCase):
                               self.buffersize, self.samplerate)
         self.time = self.osc.generate_time(0, self.buffersize, self.samplerate)[0]
 
+
+    # testing method oscillate
+    
+    def test_oscillate_wave_select_0(self):
+        oscillator = Oscillator(self.freq, 0, self.buffersize, self.samplerate)
+        samples = oscillator.oscillate()
+        
+        control_samples = oscillator.sin_oscillator(self.freq, self.time)
+        
+        for i in range(self.buffersize):
+            self.assertEqual(samples[i], control_samples[i])
+    
+    def test_oscillate_wave_select_1(self):
+        oscillator = Oscillator(self.freq, 1, self.buffersize, self.samplerate)
+        samples = oscillator.oscillate()
+        
+        control_samples = oscillator.square_oscillator(self.freq, self.time)
+        
+        for i in range(self.buffersize):
+            self.assertEqual(samples[i], control_samples[i])
+    
+    def test_oscillate_wave_select_2(self):
+        oscillator = Oscillator(self.freq, 2, self.buffersize, self.samplerate)
+        samples = oscillator.oscillate()
+        
+        control_samples = oscillator.saw_oscillator(self.freq, self.time)
+        
+        for i in range(self.buffersize):
+            self.assertEqual(samples[i], control_samples[i])
+    
+
     # testing method generate_time
 
     def test_correct_time_length(self):

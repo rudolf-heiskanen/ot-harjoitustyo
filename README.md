@@ -6,6 +6,7 @@ Tämä ohjelma on softasyntetisaattori, siis äänisynteesiä hyödyntävä soit
 - [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
 - [Tyoaikakirjanpito](./dokumentaatio/tyoaikakirjanpito.md)
 - [Changelog](./dokumentaatio/changelog.md)
+- [Arkkitehtuurikaavio](./dokumentaatio/arkkitehtuuri.md)
 
 ## Ensitoimenpiteet
 

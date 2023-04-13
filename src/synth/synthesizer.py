@@ -1,9 +1,8 @@
-import pygame
-import numpy as np
 from time import time
+import pygame
 from synth.synthengine import Synthengine
-from ui.ui import Ui
 from synth.playback import Playbackdevice
+from ui.ui import Ui
 
 
 class Synthesizer:

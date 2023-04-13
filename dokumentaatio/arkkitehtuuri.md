@@ -1,12 +1,7 @@
 Luokkakaavio:
 ```mermaid
 classDiagram
-    class Synthesizer{
-        -int samplerate
-	-int buffersize
-        
-	-run()
-    }
+    class Synthesizer
     class Synthengine
     class Playbackdevice
     class Voice
