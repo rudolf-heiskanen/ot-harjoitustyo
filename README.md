@@ -2,7 +2,7 @@
 
 Tämä ohjelma on softasyntetisaattori, siis äänisynteesiä hyödyntävä soitin joka on toteutettu ohjelmallisesti. Syntetisaattoria voi soittaa tietokoneen näppäimistöllä, ja syntetisaattorin ääntä voi muokata käyttöliittymän parametreilla. 
 
-Koska Pythonille ei ole laadittu erityisen vakiintuneita tai helppokäyttöisiä audiokirjastoja reaaliaikaiseen audioprosessointiin ja koska kokemukseni audio-ohjelmoinnista ei ole suurta, joillakin käynnistyskerroilla ääni pätkee enemmän kuin toisilla. Jos pätkintä on vakavaa, ohjelman uudelleenkäynnistäminen usein auttaa.
+Koska Pythonille ei ole laadittu erityisen vakiintuneita tai helppokäyttöisiä audiokirjastoja reaaliaikaiseen audioprosessointiin ja koska kokemukseni audio-ohjelmoinnista ei ole suurta, joillakin käynnistyskerroilla ääni pätkii enemmän kuin toisilla. Jos pätkintä on vakavaa, ohjelman uudelleenkäynnistäminen usein auttaa.
 
 ## Dokumentaatio
 - [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
