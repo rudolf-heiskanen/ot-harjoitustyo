@@ -1,3 +1,4 @@
+Luokkakaavio:
 ```mermaid
 classDiagram
 class Synthesizer{}
