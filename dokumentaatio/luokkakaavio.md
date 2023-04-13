@@ -13,4 +13,6 @@ classDiagram
     class Filter
     class Adsr
     class Ui
+
+    Synthesizer "1" -- "1" Synthengine
 ```
