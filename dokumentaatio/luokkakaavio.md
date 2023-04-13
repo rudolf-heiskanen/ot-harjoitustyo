@@ -4,9 +4,11 @@ classDiagram
     class Synthesizer{
         -int samplerate
 	-int buffersize
+        
+	-run()
     }
     class Synthengine
-    class Playback
+    class Playbackdevice
     class Voice
     class Oscillator
     class Amplifier
