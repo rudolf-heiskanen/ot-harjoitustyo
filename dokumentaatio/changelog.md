@@ -3,7 +3,7 @@
 ## Viikko 3
 ### Uusia ominaisuuksia:
 - Käyttäjä näkee listan invoke -tehtävistä ja pystyy käyttämään niitä
-- Käyttäjä pystyy ajamaan ohjelman, ja tietokoneen näppäimiä painamalla soittaa sawtooth-aallon.
+- Käyttäjä pystyy ajamaan ohjelman, ja tietokoneen näppäimiä painamalla soittamaan sawtooth-aallon.
 ### Uusia osia ohjelman rakenteessa:
 - Lisätty kaikki luokat, jotka ovat välttämättömiä tälle toiminnallisuudelle, eli 
 	- Synthesizer, joka vastaa sovelluksen ison kuvan organisoinnista

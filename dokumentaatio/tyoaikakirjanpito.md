@@ -7,4 +7,7 @@
 | 30.3.   | 4        | playbackin troubleshoottaamista epäonnisesti |
 | 2.4.    | 3        | playbackin troubleshoottaamista onnistuneesti |
 | 10.4.   | 2        | eri sävelten soittaminen näppäimistöllä lisätty |
+| 12.4.   | 3        | linttausta ja testien kirjoittamista |
+|         |          |        |
+| Summa:  | 21       |        |
 
