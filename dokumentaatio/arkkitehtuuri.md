@@ -32,11 +32,13 @@ sequenceDiagram
     deactivate Ui
     Synthesizer ->>+ Ui: get_notes()
     Ui ->>- Synthesizer: notes
-    Synthesizer ->>+ Synthengine: register_notes()
+    Synthesizer ->>+ Synthengine: register_notes(notes)
     deactivate Synthengine
     Synthesizer ->>+ Synthengine: play_notes()
-    Synthengine ->> Synthengine: calculate_frequencies()
-    Synthengine ->> Synthengine: calculate_voices()
+    Synthengine ->> Synthengine: calculate_frequencies(notes)
+    Synthengine ->> Synthengine: calculate_voices(frequencies)
+    Synthengine ->>+ Voice: play()
+    
 ```
 
 
