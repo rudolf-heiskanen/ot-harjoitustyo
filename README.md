@@ -12,7 +12,7 @@ Koska Pythonille ei ole laadittu erityisen vakiintuneita tai helppokäyttöisiä
 
 ## Ensitoimenpiteet
 
-Ohjelman voi ladata [github-releasesta](https://github.com/rudolf-heiskanen/rudolf-ohjelmistotekniikka/releases/tag/viikko5).
+Ohjelman voi ladata tästä [github-releasesta](https://github.com/rudolf-heiskanen/rudolf-ohjelmistotekniikka/releases/tag/viikko5).
 
 Ohjelman käyttämiseksi tulee ensin asentaa riippuvuudet komennolla
 ```bash
