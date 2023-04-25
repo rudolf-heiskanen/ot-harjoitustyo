@@ -33,6 +33,10 @@ sequenceDiagram
     Synthesizer ->>+ Ui: get_notes()
     Ui ->>- Synthesizer: notes
     Synthesizer ->>+ Synthengine: register_notes()
+    deactivate Synthengine
+    Synthesizer ->>+ Synthengine: play_notes()
+    Synthengine ->> Synthengine: calculate_frequencies()
+    Synthengine ->> Synthengine: calculate_voices()
 ```
 
 
