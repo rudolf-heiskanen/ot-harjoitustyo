@@ -25,30 +25,23 @@ classDiagram
     Amplifier "1" ..> "1" Adsr
 ```
 
-Sekvenssikaavio prosessista, jossa käyttäjä painaa näppäintä ja kaiuttimista kuuluu ääni.
+Sekvenssikaavio prosessista, jossa käyttäjä painaa näppäintä ja kaiuttimista kuuluu ääni:
 ```mermaid
 sequenceDiagram
-    Synthesizer ->>+ Ui: check_events()
-    deactivate Ui
-    Synthesizer ->>+ Ui: get_notes()
-    Ui ->>- Synthesizer: notes
-    Synthesizer ->>+ Synthengine: register_notes(notes)
-    deactivate Synthengine
-    Synthesizer ->>+ Synthengine: play_notes()
+    Synthesizer ->> Ui: check_events()
+    Synthesizer ->> Ui: get_notes()
+    Ui ->> Synthesizer: notes
+    Synthesizer ->> Synthengine: register_notes(notes)
+    Synthesizer ->> Synthengine: play_notes()
     Synthengine ->> Synthengine: calculate_frequencies(notes)
     Synthengine ->> Synthengine: calculate_voices(frequencies)
-    Synthengine ->>+ Voice: play()
-    deactivate Synthengine
-    Voice ->>+ Oscillator: oscillate()
-    deactivate Voice
-    Oscillator ->>+ Voice: samples
-    deactivate Oscillator
-    Voice ->>+ Synthengine: samples
-    deactivate Voice
+    Synthengine ->> Voice: play()
+    Voice ->> Oscillator: oscillate()
+    Oscillator ->> Voice: samples
+    Voice ->> Synthengine: samples
     Synthengine ->> Synthengine: sum_samples()
     Synthengine ->> Synthesizer: samples
-    deactivate Synthengine
-    Synthesizer ->>+ Playbackdevice: play(samples)
+    Synthesizer ->> Playbackdevice: play(samples)
     deactivate Synthesizer
     deactivate Playbackdevice    
 ```
