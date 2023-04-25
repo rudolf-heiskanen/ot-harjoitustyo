@@ -37,9 +37,20 @@ sequenceDiagram
     Synthesizer ->>+ Synthengine: play_notes()
     Synthengine ->> Synthengine: calculate_frequencies(notes)
     Synthengine ->> Synthengine: calculate_voices(frequencies)
-    deactivate Synthengine
     Synthengine ->>+ Voice: play()
-    
+    deactivate Synthengine
+    Voice -->+ Oscillator: oscillate()
+    deactivate Voice
+    Oscillator -->+ Voice: samples
+    deactivate Oscillator
+    Voice -->+ Synthengine: samples
+    deactivate Voice
+    Synthengine --> Synthengine: sum_samples()
+    Synthengine --> Synthesizer: samples
+    deactivate Synthengine
+    Synthesizer -->+ Playbackdevice: play(samples)
+    deactivate Synthesizer
+    deactivate Playbackdevice    
 ```
 
 
