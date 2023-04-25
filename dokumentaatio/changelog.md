@@ -25,4 +25,6 @@ Nyt audio toimii linuxilla pygamen audio-ominaisuutta käyttäen. Ääni saattaa
 
 ## Viikko 5
 ### Uusia ominaisuuksia:
-- Käyttäjä pystyy valitsemaan oskillaattorin aaltomuodon graafista käyttöliittymää käyttäen sahalaita-aallon ('sawtooth wave') ja 'kanttiaallon' ('squarewave') väliltä, säätämään äänenvoimakkuutta ja valitsemaan onko soitin moniääninen vai yksiääninen.
+- Käyttäjä pystyy valitsemaan oskillaattorin aaltomuodon graafista käyttöliittymää käyttäen sahalaita-aallon ('sawtooth wave') ja 'kanttiaallon' ('squarewave') väliltä 
+- Käyttäjä pystyy graafisen käyttöliittymän avulla säätämään äänenvoimakkuutta 
+- Käyttäjä pystyy graafisen käyttöliittymän avulla valitsemaan onko soitin moniääninen vai yksiääninen.
