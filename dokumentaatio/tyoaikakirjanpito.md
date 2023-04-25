@@ -9,6 +9,8 @@
 | 10.4.   | 2        | eri sävelten soittaminen näppäimistöllä lisätty |
 | 12.4.   | 3        | linttausta ja testien kirjoittamista |
 | 13.4.   | 3        | testien kirjoittamista ja arkkitehtuurikaaviota |
+| 24.4.   | 2        | käyttöliittymän tekemistä |
+| 25.4.   | 5        | käyttöliittymää, testejä ja dokumentaatiota |
 |         |          |        |
-| Summa:  | 24       |        |
+| Summa:  | 31       |        |
 

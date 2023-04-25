@@ -22,3 +22,7 @@ Windows-koneelta linux-koneelle siirtyessä huomasin, että alunperin käyttäm�
 
 ### Muita huomioita:
 Nyt audio toimii linuxilla pygamen audio-ominaisuutta käyttäen. Ääni saattaa hieman pätkiä joillain laitteilla tai ohjelman käynnistyskerroilla. Tämän korjaaminen vaatisi kuitenkin luultavasti niin suurta optimointia, että tyydyn nyt tähän tilanteeseen tämän kurssin osalta. Audiossa on myös pieni viive, johon voi vaikuttaa audiobufferin kokoa muuttamalla. Pätkintä kuitenkin pahenee bufferin kokoa pienentäessä, joten näiden asioiden välillä on tasapainoiltava. Käyttäjälle voitaisiin antaa vaihtoehto käynnistäessä valita bufferin koko muutamasta vaihtoehdosta.
+
+## Viikko 4
+### Uusia ominaisuuksia:
+- Käyttäjä pystyy valitsemaan sahalaita-aallon ('sawtooth wave') ja 'kanttiaallon' ('squarewave') väliltä, säätämään äänenvoimakkuutta ja valitsemaan, onko soitin polyfoninen vai monofoninen. Tämä siis tarkoittaa, että pystyykö soittimella soittamaan vain yhden sävelen kerrallaan, vai soittaako soitin useamman sävelen jos painaa useaa näppäintä samaan aikaan. 

@@ -10,10 +10,12 @@ classDiagram
     class Filter
     class Adsr
     class Ui
+    class Gui
 
     Synthesizer "1" -- "1" Synthengine
     Synthesizer "1" -- "1" Playbackdevice
     Synthesizer "1" -- "1" Ui
+    Ui "1" -- "1" Gui
 
     Synthengine "1" ..> "*" Voice
     Voice "1" -- "1" Oscillator
@@ -22,3 +24,11 @@ classDiagram
     Filter "1" ..> "1"  Adsr
     Amplifier "1" ..> "1" Adsr
 ```
+
+Sekvenssikaavio prosessista, jossa käyttäjä painaa näppäintä ja kaiuttimista kuuluu ääni.
+```mermaid
+sequenceDiagram
+    Synthesizer ->> Ui: check_events()
+```
+
+

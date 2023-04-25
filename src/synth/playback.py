@@ -9,8 +9,6 @@ class Playbackdevice:
         self.vol = 0.3
         pygame.mixer.pre_init(frequency=self.samplerate,
                               size=-16, channels=1, buffer=self.buffersize)
-        self.duration = self.buffersize / self.samplerate / 1.05
-        self.last = 0
 
     def play(self, samples):
         self.play_pygame(samples)

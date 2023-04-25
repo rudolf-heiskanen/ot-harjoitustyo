@@ -13,6 +13,7 @@ thorpy = "^1.8.1"
 invoke = "^2.0.0"
 simpleaudio = "^1.0.4"
 sounddevice = "^0.4.6"
+pygame-gui = "^0.6.9"
 
 
 [tool.poetry.group.dev.dependencies]

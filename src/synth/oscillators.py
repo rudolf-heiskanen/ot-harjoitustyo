@@ -9,6 +9,9 @@ class Oscillator:
         self.samplerate = samplerate
         self.old = 0
 
+    def set_wave(self, wave):
+        self.wave = wave
+
     def oscillate(self):
         time, new = self.generate_time(
             self.old, self.buffersize, self.samplerate)

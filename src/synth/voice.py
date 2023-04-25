@@ -15,6 +15,10 @@ class Voice:
         self.oscillator = Oscillator(
             self.freq, self.wave, self.buffersize, self.samplerate)
 
+    def set_parameters(self, params):
+        self.wave = params.get_osc()
+        self.oscillator.set_wave(self.wave)
+
     def play(self):
         raw_wave = self.oscillator.oscillate()
 

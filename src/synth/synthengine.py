@@ -8,14 +8,22 @@ class Synthengine:
         self.pressednotes = []
         self.playingnotes = []
         self.voices = []
-        self.oscillator_select = 2
+        self.oscillator_select = 1
         self.samplerate = samplerate
         self.buffersize = buffersize
         self.mode = "poly"
         self.clock = 0
+        self.volume = 1
 
-    def get_time(self, clock):
+    def set_time(self, clock):
         self.clock = clock
+
+    def set_parameters(self, params):
+        for voice in self.voices:
+            voice.set_parameters(params)
+        self.oscillator_select = params.get_osc()
+        self.volume = params.get_volume()
+        self.mode = params.get_polyphony()
 
     def play_notes(self):
         frequencies = self.calculate_frequencies(self.playingnotes)
@@ -72,4 +80,5 @@ class Synthengine:
         blank = np.asarray([0.0*256])
         samples_list.append(blank)
         samples = sum(samples_list)
+        samples *= self.volume
         return samples
