@@ -37,6 +37,7 @@ sequenceDiagram
     Synthesizer ->>+ Synthengine: play_notes()
     Synthengine ->> Synthengine: calculate_frequencies(notes)
     Synthengine ->> Synthengine: calculate_voices(frequencies)
+    deactivate Synthengine
     Synthengine ->>+ Voice: play()
     
 ```
