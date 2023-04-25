@@ -42,8 +42,6 @@ sequenceDiagram
     Synthengine ->> Synthengine: sum_samples()
     Synthengine ->> Synthesizer: samples
     Synthesizer ->> Playbackdevice: play(samples)
-    deactivate Synthesizer
-    deactivate Playbackdevice    
 ```
 
 
