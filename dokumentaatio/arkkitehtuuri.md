@@ -30,17 +30,25 @@ Sekvenssikaavio prosessista, jossa käyttäjä painaa näppäintä ja kaiuttimis
 sequenceDiagram
     Synthesizer ->> Ui: check_events()
     Synthesizer ->> Ui: get_notes()
+    activate Ui
     Ui ->> Synthesizer: notes
+    deactivate Ui
     Synthesizer ->> Synthengine: register_notes(notes)
     Synthesizer ->> Synthengine: play_notes()
+    activate Synthengine
     Synthengine ->> Synthengine: calculate_frequencies(notes)
     Synthengine ->> Synthengine: calculate_voices(frequencies)
     Synthengine ->> Voice: play()
+    activate Voice
     Voice ->> Oscillator: oscillate()
+    activate Oscillator
     Oscillator ->> Voice: samples
+    deactivate Oscillator
     Voice ->> Synthengine: samples
+    deactivate Voice
     Synthengine ->> Synthengine: sum_samples()
     Synthengine ->> Synthesizer: samples
+    deactivate Synthengine
     Synthesizer ->> Playbackdevice: play(samples)
 ```
 
