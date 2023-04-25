@@ -29,6 +29,13 @@ Sekvenssikaavio prosessista, jossa käyttäjä painaa näppäintä ja kaiuttimis
 ```mermaid
 sequenceDiagram
     Synthesizer ->> Ui: check_events()
+    activate Ui
+    activate Synthesizer
+    Synthesizer ->> Ui: get_notes()
+    activate Ui
+    Ui ->> Synthesizer: notes
+    activate Synthesizer
+    Synthesizer ->> Synthengine: register_notes()
 ```
 
 
