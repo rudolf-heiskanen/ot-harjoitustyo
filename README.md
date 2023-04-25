@@ -8,7 +8,7 @@ Koska Pythonille ei ole laadittu erityisen vakiintuneita tai helppokäyttöisiä
 - [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
 - [Tyoaikakirjanpito](./dokumentaatio/tyoaikakirjanpito.md)
 - [Changelog](./dokumentaatio/changelog.md)
-- [Arkkitehtuurikaavio](./dokumentaatio/arkkitehtuuri.md)
+- [Arkkitehtuurikaaviot](./dokumentaatio/arkkitehtuuri.md)
 
 ## Ensitoimenpiteet
 
