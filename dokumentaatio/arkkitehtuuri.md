@@ -28,14 +28,11 @@ classDiagram
 Sekvenssikaavio prosessista, jossa käyttäjä painaa näppäintä ja kaiuttimista kuuluu ääni.
 ```mermaid
 sequenceDiagram
-    Synthesizer ->> Ui: check_events()
-    activate Ui
-    activate Synthesizer
-    Synthesizer ->> Ui: get_notes()
-    activate Ui
-    Ui ->> Synthesizer: notes
-    activate Synthesizer
-    Synthesizer ->> Synthengine: register_notes()
+    Synthesizer ->>+ Ui: check_events()
+    deactivate Ui
+    Synthesizer ->>+ Ui: get_notes()
+    Ui ->>- Synthesizer: notes
+    Synthesizer ->>+ Synthengine: register_notes()
 ```
 
 
