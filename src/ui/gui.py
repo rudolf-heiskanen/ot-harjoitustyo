@@ -38,14 +38,22 @@ class Gui:
         self.polybutton = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((225, 250), (100, 50)),
                                                                                  text = 'Poly',
                                                                                  manager=self.manager)
+        
+        self.cutoffslider = pygame_gui.elements.UIHorizontalSlider(relative_rect=pygame.Rect((450, 250), (275, 50)),
+                                                                   start_value= 127 * self.params.cutoff / 20000,
+                                                                   value_range=(0,127),
+                                                                   manager=self.manager)
 
     
     def draw_texts(self):
         self.text_oscselect = self.font.render_to(self.screen, (75, 50),'Oscillator select', 'gray33')
-        self.text_volume = self.font.render_to(self.screen, (525,50), 'Volume', 'gray33')
+        self.text_volume = self.font.render_to(self.screen, (450,50), 'Volume', 'gray33')
+        self.text_cutoff = self.font.render_to(self.screen, (450, 200), 'Filter cutoff', 'gray33')
 
         self.text_volumestart = self.smallfont.render_to(self.screen, (450 ,80), '0', 'white')
         self.text_volumeend = self.smallfont.render_to(self.screen, (695, 80), '127', 'white')
+        self.text_cutoffstart = self.smallfont.render_to(self.screen, (450, 230), '0hz', 'white')
+        self.text_cutoffend = self.smallfont.render_to(self.screen, (675, 230), '20khz', 'white')
 
         self.text_polyphony = self.font.render_to(self.screen, (75, 200), 'Polyphony', 'gray33')
     
@@ -81,6 +89,8 @@ class Gui:
                 self.params.set_polyphony("poly")
 
         self.params.set_volume(self.volumeslider.get_current_value() / 127)
+        self.params.set_cutoff(self.cutoffslider.get_current_value() / 127 * 20000 + 1)
         self.manager.process_events(event)
+
         
         return self.params

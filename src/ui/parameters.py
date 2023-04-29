@@ -4,6 +4,7 @@ class Parameters:
         self.osc = 2
         self.polyphony = "poly"
         self.volume = 1
+        self.cutoff = 20000
     
     def get_osc(self):
         return self.osc
@@ -25,3 +26,9 @@ class Parameters:
 
     def set_polyphony(self, polyphony):
         self.polyphony = polyphony
+    
+    def get_cutoff(self):
+        return self.cutoff
+
+    def set_cutoff(self, cutoff):
+        self.cutoff = cutoff

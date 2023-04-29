@@ -11,6 +11,7 @@
 | 13.4.   | 3        | testien kirjoittamista ja arkkitehtuurikaaviota |
 | 24.4.   | 2        | käyttöliittymän tekemistä |
 | 25.4.   | 5        | käyttöliittymää, testejä ja dokumentaatiota |
+| 28.4.   | 2        | filtteri ja tämän kontrolli käyttöliittymään lisätty |
 |         |          |        |
-| Summa:  | 31       |        |
+| Summa:  | 33       |        |
 
