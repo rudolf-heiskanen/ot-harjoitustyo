@@ -5,6 +5,7 @@ Tämä ohjelma on softasyntetisaattori, siis äänisynteesiä hyödyntävä soit
 Koska Pythonille ei ole laadittu erityisen vakiintuneita tai helppokäyttöisiä audiokirjastoja reaaliaikaiseen audioprosessointiin ja koska kokemukseni audio-ohjelmoinnista ei ole suurta, joillakin käynnistyskerroilla ääni pätkii enemmän kuin toisilla. Jos pätkintä on vakavaa, ohjelman uudelleenkäynnistäminen usein auttaa.
 
 ## Dokumentaatio
+- [Käyttöohje](./dokumentaatio/kayttoohje.md)
 - [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
 - [Tyoaikakirjanpito](./dokumentaatio/tyoaikakirjanpito.md)
 - [Changelog](./dokumentaatio/changelog.md)
