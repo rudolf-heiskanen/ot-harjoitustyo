@@ -12,6 +12,7 @@
 | 24.4.   | 2        | käyttöliittymän tekemistä |
 | 25.4.   | 5        | käyttöliittymää, testejä ja dokumentaatiota |
 | 28.4.   | 2        | filtteri ja tämän kontrolli käyttöliittymään lisätty |
+| 29.4.   | 4        | docstringiä, käyttöohjetta ja pieniä korjauksia |
 |         |          |        |
-| Summa:  | 33       |        |
+| Summa:  | 37       |        |
 
