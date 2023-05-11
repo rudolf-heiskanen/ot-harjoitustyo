@@ -1,6 +1,7 @@
 import unittest
 from synth.voice import Voice
 from synth.oscillators import Oscillator
+from synth.filter import Filter
 from ui.parameters import Parameters
 
 class TestVoice(unittest.TestCase):
@@ -9,8 +10,9 @@ class TestVoice(unittest.TestCase):
         self.wave = 2
         self.buffersize = 200
         self.samplerate = 44100
+        self.params = Parameters()
         
-        self.voice = Voice(self.freq, self.wave, self.buffersize, self.samplerate)
+        self.voice = Voice(self.freq, self.wave, self.buffersize, self.samplerate, self.params)
 
     # testing intializing
 
@@ -32,8 +34,10 @@ class TestVoice(unittest.TestCase):
     # testing method play
 
     def test_play(self):
+        filter = Filter(self.samplerate, self.params.get_cutoff())
         control_osc = Oscillator(self.freq, self.wave, self.buffersize, self.samplerate)
         control_samples = control_osc.oscillate()
+        control_samples = filter.filter(control_samples)
         samples = self.voice.play()
         
         for i in range(len(control_samples)):

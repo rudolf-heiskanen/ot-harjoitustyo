@@ -88,7 +88,7 @@ class Synthengine:
         samples = self.sum_samples(samples_list)
         return samples
 
-    def register_notes_temporary(self, notes: list):
+    def register_notes(self, notes: list):
         """Kirjaa luokan attribuuttiin tiedon siitä, mitkä nuotit ovat painettuina.
          
         Metodi on vielä keskeneräinen, tulevassa toiminnallisuudessa voi toivottavasti
@@ -102,24 +102,10 @@ class Synthengine:
         self.pressednotes = notes
         self.release_times_temporary()
 
-    def mode_select(self):
-        """Tekee tarvittavat moniäänisyyttä koskevat toimenpiteet luokan playingnotes-attribuutista haetulle listalle nuotteja.
-        
-        Returns:
-            Palauttaa listan nuotteja, joissa on otettu huomioon moniäänisyysasetus.
-        """
-        self.playingnotes.sort()
-        if self.mode == "mono":
-            if len(self.playingnotes) > 0:
-                notes = [self.playingnotes.pop()]
-            else:
-                notes = []
-        return notes
-
     def release_times_temporary(self):
         """Tämäkin metodi on keskeneräinen ja liittyy tulevaan toiminnallisuudeen äänen hiipumisesta irti päästön jälkeen.
         """
-
+    
         self.playingnotes = self.pressednotes
 
     def calculate_frequencies(self, notes):
@@ -166,11 +152,12 @@ class Synthengine:
                     Voice(frequency, self.oscillator_select, self.buffersize,
                     self.samplerate, self.params))
 
+        new_voices = []
         for voice in voices:
-            if voice.freq not in frequencies:
-                voices.remove(voice)
+            if voice.freq in frequencies:
+                new_voices.append(voice)
 
-        return voices
+        return new_voices
 
     def sum_samples(self, samples_list):
         """Laskee yhteen eri sävelten samplet yhdeksi listaksi.

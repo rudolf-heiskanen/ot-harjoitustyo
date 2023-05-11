@@ -64,7 +64,7 @@ class Synthesizer:
 
             self.synthengine.set_time(self.clock)
             notes = self.ui.get_notes()
-            self.synthengine.register_notes_temporary(notes)
+            self.synthengine.register_notes(notes)
 
             # timed events
 

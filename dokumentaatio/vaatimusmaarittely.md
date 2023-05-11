@@ -1,16 +1,15 @@
 # Vaatimusmäärittely
 
-## Sovelluksen tarkoitus
-Sovellus on monofoninen eli yksiääninen, perinteinen syntetisaattori, jota voi soittaa tietokoneen näppäimillä. Syntetisaattorin äänen sävyä voi muokata aaltomuotoa vaihtamalla, sävelen voimakkuutta muovaamalla ja filtteriä käyttäen.
+## Sovelluksen toiminnallisuus
 
-## Suunnitellut toiminnallisuudet
-### Perusversio (kurssin alussa)
-- Äänenä aluksi puhdas siniaalto (*tehty*)
-- Käyttäjä voi tietokoneen näppäimistöllä vaihtaa sävelen korkeutta ja määrittää nuotin pituuden vapauttamalla näppäimen (*tehty*)
+- Sovellus on tietokoneen näppäimistöllä soitettava yksinkertainen syntetisaattori.
+- Syntetisaattorin graafisen käyttöliittymän kautta voi säätää seuraavia ominaisuuksia:
+    - Aaltomuodon valinta
+    - Moniäänisyyden valinta
+    - Filtterin leikkauskohta
+    - Äänenvoimakkuus
 
-### Laajennettu versio (kurssin lopussa)
-Seuraavista, ylimääräisistä ominaisuuksista toteutetaan se osa mikä ehditään
-- Äänen voi valita ainakin neliöaallon ja sahalaita-aallon väliltä. (*tehty*)
-- Käytössä on myös filtteri ja envelope-generaattori äänenvoimakkuudelle ja filtterin frekvenssille.
-- Asetuksia voidaan muokata graafisella käyttöliittymällä. Käyttöliittymä myös näyttää aaltomuotovaihtoehdot kuvina. (*osittain tehty*)
-- Käyttäjä voi tallettaa soundipresettinsä ja ladata ne myöhemmin uudestaan.
+
+## Jatkokehitysideoita
+- Filtterille ja äänenvoimakkuudelle envelope, eli automatisaatio ajan kuluesa nuotinpainallushetkestä.
+- Käyttäjälle mahdollisuus tallentaa asetuksiaan tiedostoon, josta ne voi ladata seuraavilla käyttökerroilla
