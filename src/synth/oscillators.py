@@ -3,7 +3,7 @@ import numpy as np
 
 class Oscillator:
     """Luokka, joka vastaa äänen pohjana käytettävien ääniaaltojen generoimisesta
-    
+
     Attributes:
         freq: taajuus, jonka mukaan värähtelevää aaltoa oskillaattorin tulee
           generoida
@@ -42,7 +42,7 @@ class Oscillator:
 
     def oscillate(self):
         """Metodi, joka luo aikadatan ja kutsuu asianmukaista oskillaattoria
-        
+
         Returns:
             Palauttaa bufferin koon määrittämän pituisen listan äänidataa sampleina
         """
@@ -60,15 +60,15 @@ class Oscillator:
 
     def generate_time(self, old, buffersize, samplerate):
         """Luo aikadatan, jonka pohjalta oskillaattori laskee ääniaallon
-        
+
         Oskillaattorit laskevat ääniaallot ajan funktioina. Syntetisaattori ei käytä
         aikayksikkönä sekuntia, vaan sampleraten määrittämää sekunnin murto-osaa.
-        
+
         Args:
             old: Edellisen aikadatalistan päätepiste
             buffersize: Kuinka monta samplea lasketaan valmiiksi, ennen kuin ne
             samplerate: Kuinka moneen sampleen yksi sekunti on jaettu
-        
+
         Returns:
             time: Metodin generoima lista aikadataa
             new: Tämän luodun listan päätepiste
@@ -82,11 +82,11 @@ class Oscillator:
 
     def sin_oscillator(self, freq, time):
         """Laskee saamansa ajan pohjalta siniaallon
-        
+
         Args:
             freq: Laskettavan siniaallon värähtelynopeus
             time: Aika, jonka pohjalta siniaalto lasketaan
-        
+
         Returns:
             Palauttaa bufferin koon määrittämän pituisen listan äänidataa
             sampleina
@@ -101,7 +101,7 @@ class Oscillator:
         args:
             freq: laskettavan kanttiaallon värähtelynopeus
             time: aika, jonka pohjalta kanttiaalto lasketaan
-        
+
         returns:
             palauttaa bufferin koon määrittämän pituisen listan äänidataa
             sampleina
@@ -119,7 +119,7 @@ class Oscillator:
         args:
             freq: laskettavan sahalaita-aallon värähtelynopeus
             time: aika, jonka pohjalta sahalaita-aalto lasketaan
-        
+
         returns:
             palauttaa bufferin koon määrittämän pituisen listan äänidataa
             sampleina

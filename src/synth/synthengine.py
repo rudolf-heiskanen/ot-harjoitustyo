@@ -5,12 +5,12 @@ from synth.frequencies import calculate_frequencies
 
 class Synthengine:
     """Luokka joka hallinnoi nuottidatan muuttamista ääneksi
-    
+
     Luokka saa Synthesizer-luokan välittämänä tiedon painetuista nuoteista,
     laskee mitä frekvenssiä kukin nuotti vastaa, ja luo tämän tiedon
     perusteella Voice-luokan instanssit jotka vastaavat kukin yhden nuotin
     äänen generoimisesta.
-    
+
     Attributes:
         pressednotes: Lista nuoteista, jotka käyttöliittymä on ilmoittanut painetuiksi
         playingnotes: Lista nuoteista, jotka soivat (ml. ne, joiden näppäin on jo
@@ -50,18 +50,18 @@ class Synthengine:
 
     def set_time(self, clock):
         """Asettaa luokan kellon. Otetaan mahdollisesti käyttöön tulevassa toiminnallisuudessa.
-        
+
         Args:
             clock: Kellon arvo, joka asetetaan luokan attribuutille
         """
-        
+
         self.clock = clock
 
     def set_parameters(self, params):
         """Asettaa luokan params-attribuutille Parameters-olion.
 
         Parameters-olio sisältää äänen asetuksia, joita voi säätää käyttöliittymällä.
-        
+
         Args:
             params: Parameters-luokan olio.
         """
@@ -76,12 +76,12 @@ class Synthengine:
         """Hallinnoi nuottien muuttamista nuottidatasta ääneksi.
 
         Luokan tärkein metodi, jota Synthesizer-luokan päälooppi kutsuu.
-        
+
         Returns:
             Palauttaa buffersizen määrittämän pituisen listan sampleja, jotka
             äänentoistosta vastaava osa osaa soittaa äänenä kaiuttimista.
         """
-        
+
         frequencies = self.calculate_frequencies(self.playingnotes)
         self.voices = self.calculate_voices(frequencies, self.voices)
         samples_list = [voice.play() for voice in self.voices]
@@ -90,7 +90,7 @@ class Synthengine:
 
     def register_notes(self, notes: list):
         """Kirjaa luokan attribuuttiin tiedon siitä, mitkä nuotit ovat painettuina.
-         
+
         Metodi on vielä keskeneräinen, tulevassa toiminnallisuudessa voi toivottavasti
         asettaa äänen hiipumaan hitaasti näppäimestä irti päästämisen jälkeen. Tämä luultavasti
         laskettaisiin tässä vaiheessa.
@@ -103,9 +103,9 @@ class Synthengine:
         self.release_times_temporary()
 
     def release_times_temporary(self):
-        """Tämäkin metodi on keskeneräinen ja liittyy tulevaan toiminnallisuudeen äänen hiipumisesta irti päästön jälkeen.
+        """Tämäk metodi liittyy tulevaan toiminnallisuuteen äänen hiipumisesta irti päästön jälkeen.
         """
-    
+
         self.playingnotes = self.pressednotes
 
     def calculate_frequencies(self, notes):
@@ -137,7 +137,7 @@ class Synthengine:
         Args:
             frequencies: Lista taajuuksista, joita vastaavat Voice-oliot tulee olla olemassa
             voices_old: Lista jo tällä hetkellä olemassa olevista Voice-olioista
-        
+
         Returns:
             Palauttaa päivitetyn listan Voice-olioista.
         """
@@ -150,7 +150,7 @@ class Synthengine:
             if not found:
                 voices.append(
                     Voice(frequency, self.oscillator_select, self.buffersize,
-                    self.samplerate, self.params))
+                          self.samplerate, self.params))
 
         new_voices = []
         for voice in voices:

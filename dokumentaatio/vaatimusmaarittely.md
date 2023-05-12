@@ -1,9 +1,13 @@
 # Vaatimusmäärittely
 
+## Sovelluksen tarkoitus
+
+Sovellus on yksinkertainen tietokoneen näppäimistöllä soitettava syntetisaattori. Se toimii subtraktiivisen synteesin periaatteella, eli äänen muodostaminen alkaa yksinkertaisesta aaltomuodosta, jonka harmonista sisältöä sitten "leikataan" täten muokaten äänen sävyä. Sovelluksella on graafinen käyttöliittymä, jonka kautta käyttäjä voi muokata ääntä.
+
 ## Sovelluksen toiminnallisuus
 
-- Sovellus on tietokoneen näppäimistöllä soitettava yksinkertainen syntetisaattori.
-- Syntetisaattorin graafisen käyttöliittymän kautta voi säätää seuraavia ominaisuuksia:
+- Soitinta voi soittaa tietokoneen näppäimistöllä
+- Graafisen käyttöliittymän kautta voi muokata seuraavia asioita:
     - Aaltomuodon valinta
     - Moniäänisyyden valinta
     - Filtterin leikkauskohta

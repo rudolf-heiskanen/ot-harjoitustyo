@@ -8,7 +8,7 @@ class Synthesizer:
     """Luokka, joka vastaa ohjelman pääloopin pyörittämisestä
 
     Luokka hoitaa myös informaation välittämisen käyttöliittymän ja sovelluslogiikan välillä.
-    
+
     Attributes:
         buffersize: Kuinka monta samplea (yksittäinen äänenvoimakkuutta kuvaava lukuarvo joista
           digitaalinen audio koostuu) ohjelma laskee ennen kuin se lähettää
@@ -40,13 +40,13 @@ class Synthesizer:
 
     def run(self):
         """Ohjelman pääloopin pyörittämisestä vastaava metodi
-        
+
         Vastaa pääloopin pyörittämisestä ja sen tarvittaessa keskeyttämisestä.
         Kutsutaan ohjelman käynnistyksen yhteydessä. Vastaa kellon ylläpitämisestä.
         Informaation välitys käyttöliittymän ja sovelluslogiikan välillä tapahtuu
         loopin sisällä.
         """
-        
+
         running = True
         samples = self.synthengine.play_notes()
 

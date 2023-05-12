@@ -1,9 +1,9 @@
 def calculate_frequencies(notes):
     """Funktio, joka laskee nuotin nimeä vastaavan taajuuden
-    
+
     Args:
         notes: Lista nuotteja
-    
+
     Returns:
         Palauttaa listan annettuja nuotteja vastaavia taajuuksia
     """
@@ -11,7 +11,7 @@ def calculate_frequencies(notes):
     table = {
         "c3": 130.81,
         "c#3": 138.59,
-        "d3": 146.83, 
+        "d3": 146.83,
         "d#3": 155.56,
         "e3": 164.81,
         "f3": 174.61,

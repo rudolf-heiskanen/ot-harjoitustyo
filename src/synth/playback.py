@@ -1,6 +1,7 @@
 import numpy as np
 import pygame
 
+
 class Playbackdevice:
     """Tämä luokka vastaa äänentoistosta
 
@@ -12,9 +13,10 @@ class Playbackdevice:
         samplerate: Kuinka moneen sampleen yksi sekunti on jaettu
         vol: Koko sovelluksen maksimiäänenvoimakkuuden säätö
     """
+
     def __init__(self, buffersize, samplerate):
-        """Luokan konstruktori, joka alustaa aiemmin listatut attribuutit ja pygamen audiojärjestelmän
-        
+        """Luokan konstruktori, joka alustaa attribuutit ja pygamen audiojärjestelmän
+
         Args:
             buffersize: Kuinka monta samplea lasketaan valmiiksi, ennen kuin ne
             samplerate: Kuinka moneen sampleen yksi sekunti on jaettu   
@@ -27,10 +29,10 @@ class Playbackdevice:
 
     def play(self, samples):
         """Metodi, joka lähettää saamansa samplet tietylle audiokirjastolle
-        
+
         Tämä on olemassa sen takia, että kehityksessä on tarvinnut, ja voi
         jatkossakin tarvita vertailla eri audiokirjastojen toimivuutta.
-        
+
         Args:
             samples: Lista sampleista, jotka sisältävät bufferin koon verran
               äänidataa
@@ -39,7 +41,7 @@ class Playbackdevice:
 
     def play_pygame(self, samples):
         """Metodi hoitaa vaadittavat alkutoimenpiteet ja kutsuu pygamen audiokirjastoa
-        
+
         Args:
             samples: Lista sampleista, jotka sisältävät bufferin koon verran äänidataa
         """

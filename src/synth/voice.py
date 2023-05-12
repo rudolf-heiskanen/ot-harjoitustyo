@@ -8,7 +8,7 @@ class Voice:
     Luokka ohjaa oskillaatoria luomaan ääniaallon tietyllä taajuudella,
     ja syöttää tämän ääniaallon filtterin läpi. Myöhemmin toivottavasti
     saadaan lisättyä vielä äänenvoimakkuuden vaihtelu nuotin soinnin kuluessa.
-    
+
     Attributes:
         freq: nuotin taajuus, eli korkeus
         wave: äänelle asetettu aaltomuoto, jonka oskillaattori generoi
@@ -23,7 +23,7 @@ class Voice:
     """
 
     def __init__(self, freq, wave, buffersize,
-    samplerate, params):
+                 samplerate, params):
         """Luokan konstruktori, joka alustaa edellä mainitut attribuutit.
 
         Args:
@@ -34,7 +34,7 @@ class Voice:
             params: Käyttöliittymän lähettämä, äänen sävyn asetukset
               määrittävä olio
         """
-    
+
         self.freq = freq
         self.wave = wave
         self.buffersize = buffersize

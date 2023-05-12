@@ -21,3 +21,6 @@ Graafisella käyttöliittymällä voit muokata sitä, miltä soittimen ääni ku
 
 ## Pätkimisestä
 Jos soittimen ääni pätkii merkittävästi, ohjelman uudelleenkäynnistäminen auttaa asiaan. Ohjelman voi sulkea painamalla ESC, tai sulkemalla pygame-ikkunan ruksista.
+
+## Hiiren käytöstä
+Saatat huomata, että jos soitat soitinta samalla, kun koitat säätää asetuksia hiirellä, hiiri ei liikukaan. Havaintojeni mukaan näin käy vain läppärin touchpadilla, ja varsinaisella erillisellä tietokonehiirellä ongelmia ei ole. 
