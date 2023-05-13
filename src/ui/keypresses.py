@@ -2,11 +2,27 @@ import pygame
 
 
 class Keyboardinput:
+    """Luokka, joka lukee pygamen näppäimistöinputin ja kääntää sen nuoteiksi
+    
+    Attributes:
+        keypresses: lista painetuista tietokoneen näppäimistä
+        notes: lista painettuja näppäimiä vastaavista nuoteista
+    """
+
     def __init__(self):
+        """Luokan konstruktori
+        """
+
         self.keypresses = []
         self.notes = []
 
     def read_keypresses(self, event):
+        """Metodi, joka lukee pygamen näppäimistöinputtia ja lisää painetut näppäimet "keypresses"-listaan.
+        
+        Args:
+            event: pygame-eventti, joka sisältää mahdollisesti tiedon näppäimen painalluksesta
+        """
+
         key = ""
         if event.type == pygame.KEYDOWN or event.type == pygame.KEYUP:
             if event.key == pygame.K_a:
@@ -41,6 +57,9 @@ class Keyboardinput:
             self.keypresses.remove(key)
 
     def calculate_notes(self):
+        """Metodi, joka laskee "keypresses"-listaa painetuista näppäimistä vastaavan listan nuotteja
+        """
+
         temp_list = []
 
         for press in self.keypresses:
@@ -73,5 +92,11 @@ class Keyboardinput:
         self.notes = temp_list
 
     def get_notes(self):
+        """Metodi, jota pääohjelma kutsuu halutessaan tiedon tällä hetkellä soivista nuoteista
+        
+        Returns:
+            palauttaa listan painettuja näppäimiä vastaavista nuoteista
+        """
+
         self.calculate_notes()
         return self.notes

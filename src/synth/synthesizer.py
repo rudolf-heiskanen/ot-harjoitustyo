@@ -62,7 +62,6 @@ class Synthesizer:
             if self.ui.get_exit():
                 running = False
 
-            self.synthengine.set_time(self.clock)
             notes = self.ui.get_notes()
             self.synthengine.register_notes(notes)
 

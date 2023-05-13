@@ -14,6 +14,8 @@
 | 28.4.   | 2        | filtteri ja tämän kontrolli käyttöliittymään lisätty |
 | 29.4.   | 4        | docstringiä, käyttöohjetta ja pieniä korjauksia |
 | 8.5.    | 3        | testien kirjoitusta |
+| 11.5.   | 1        | docstringiä |
+| 12.5.   | 3        | docstringiä, käyttöliittymän viimeistelyä |
 |         |          |        |
 | Summa:  | 40       |        |
 

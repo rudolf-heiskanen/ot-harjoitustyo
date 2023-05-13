@@ -48,15 +48,6 @@ class Synthengine:
         self.volume = 1
         self.params = False
 
-    def set_time(self, clock):
-        """Asettaa luokan kellon. Otetaan mahdollisesti käyttöön tulevassa toiminnallisuudessa.
-
-        Args:
-            clock: Kellon arvo, joka asetetaan luokan attribuutille
-        """
-
-        self.clock = clock
-
     def set_parameters(self, params):
         """Asettaa luokan params-attribuutille Parameters-olion.
 
@@ -100,12 +91,6 @@ class Synthengine:
         """
 
         self.pressednotes = notes
-        self.release_times_temporary()
-
-    def release_times_temporary(self):
-        """Tämäk metodi liittyy tulevaan toiminnallisuuteen äänen hiipumisesta irti päästön jälkeen.
-        """
-
         self.playingnotes = self.pressednotes
 
     def calculate_frequencies(self, notes):
