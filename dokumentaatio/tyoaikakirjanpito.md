@@ -16,6 +16,8 @@
 | 8.5.    | 3        | testien kirjoitusta |
 | 11.5.   | 1        | docstringiä |
 | 12.5.   | 3        | docstringiä, käyttöliittymän viimeistelyä |
+| 13.5.   | 2        | docstringiä ja arkkitehtuuridokumentin kirjoitusta |
+| 14.5.   | 1        | testausdokumentti, viimeisiä silauksia ohjelmaan |
 |         |          |        |
 | Summa:  | 40       |        |
 

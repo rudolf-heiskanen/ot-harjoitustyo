@@ -2,7 +2,7 @@
 
 ## Viikko 3
 ### Uusia ominaisuuksia:
-- Käyttäjä näkee listan invoke -tehtävistä ja pystyy käyttämään niitä
+- Käyttäjä näkee listan invoke -tehtävistä ja pystyy käyttämään niitä.
 - Käyttäjä pystyy ajamaan ohjelman, ja tietokoneen näppäimiä painamalla soittamaan sawtooth-aallon.
 ### Uusia osia ohjelman rakenteessa:
 - Lisätty kaikki luokat, jotka ovat välttämättömiä tälle toiminnallisuudelle, eli 
@@ -11,7 +11,7 @@
 		- Voice, joka vastaa yhden tietyllä hetkellä soivan sävelen muuttamisesta audioksi
 			- Oscillator, joka vastaa yhden Voicen äänen pohjana toimivien ääniaaltojen generoimisesta
 	- Playbackdevice, joka vastaa synthenginen generoiman audion soittamisesta tietokoneen kaiuttimista
-	- Ui, joka tällä hetkellä vain lukee PyGamen avulla näppäimistön syötettä soittamista varten
+	- Ui, joka tällä hetkellä vain lukee PyGamen avulla näppäimistön syötettä soittamista varten.
 
 ### Muita huomioita:
 Windows-koneelta linux-koneelle siirtyessä huomasin, että alunperin käyttämäni audiokirjasto PyAudio ei toimi ilman riippuvuuksia, joten tällä hetkellä äänenlaatu on huono, ja asialle toivottavasti onnistutaan tekemään jotakin tulevaisuudessa.
@@ -25,11 +25,18 @@ Nyt audio toimii linuxilla pygamen audio-ominaisuutta käyttäen. Ääni saattaa
 
 ## Viikko 5
 ### Uusia ominaisuuksia:
-- Käyttäjä pystyy valitsemaan oskillaattorin aaltomuodon graafista käyttöliittymää käyttäen sahalaita-aallon ('sawtooth wave') ja 'kanttiaallon' ('squarewave') väliltä 
-- Käyttäjä pystyy graafisen käyttöliittymän avulla säätämään äänenvoimakkuutta 
+- Käyttäjä pystyy valitsemaan oskillaattorin aaltomuodon graafista käyttöliittymää käyttäen sahalaita-aallon ('sawtooth wave') ja 'kanttiaallon' ('squarewave') väliltä.
+- Käyttäjä pystyy graafisen käyttöliittymän avulla säätämään äänenvoimakkuutta.
 - Käyttäjä pystyy graafisen käyttöliittymän avulla valitsemaan onko soitin moniääninen vai yksiääninen.
 
 ## Viikko 6
 ### Uusia ominaisuuksia:
-- Soittimeen on lisätty filtteri, joka leikkaa äänestä taajuuksia tietyn rajan ylä- tai alapuolelta.
-- Käyttäjä voi säätää tätä filtterin rajaa eli cutoffia graafisen käyttöliittymän avulla
+- Soittimeen on lisätty filtteri, joka leikkaa äänestä taajuuksia tietyn rajan alapuolelta.
+- Käyttäjä voi säätää tätä filtterin rajaa eli cutoffia graafisen käyttöliittymän avulla.
+
+## Viikko 7
+### Uusia ominaisuuksia:
+- Aiemmin terminaaliin tulostuneet ohjeet on siirrety graafiseen käyttöliittymään.
+
+### Muuta
+Ohjelmaa on siistitty merkittävästi.

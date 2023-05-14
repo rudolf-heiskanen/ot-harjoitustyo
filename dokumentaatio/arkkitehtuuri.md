@@ -13,7 +13,6 @@ Luokka Synthesizer vastaa ohjelman pääloopin pyörittämisestä, kellon pitäm
 
 Alla on visuaalisesti esitettynä aiemmin kuvailtu kokonaisuus.
 
-Luokkakaavio:
 ```mermaid
 classDiagram
     class Synthesizer
@@ -21,9 +20,7 @@ classDiagram
     class Playbackdevice
     class Voice
     class Oscillator
-    class Amplifier
     class Filter
-    class Adsr
     class Ui
     class Gui
 
@@ -35,12 +32,11 @@ classDiagram
     Synthengine "1" ..> "*" Voice
     Voice "1" -- "1" Oscillator
     Voice "1" -- "1" Filter
-    Voice "1" -- "1" Amplifier
-    Filter "1" ..> "1"  Adsr
-    Amplifier "1" ..> "1" Adsr
 ```
+## Esimerkki tyypillisestä sovelluksen kierroksesta
 
-Sekvenssikaavio prosessista, jossa käyttäjä painaa näppäintä ja kaiuttimista kuuluu ääni:
+Alla on sekvenssikaavio tyypillisestä sovelluksen kierroksesta, jonka aikana ohjelma lukee käyttäjältä näppäimen painalluksen ja soittaa sitä vastaavan äänen kaiuttimista. Kaikki pääohjelman kierrokset, joita tapahtuu bufferin koosta riippuva määrä, kuitenkin kymmeniä tai satoja kertoja sekunnissa, noudattavat jota kuinkin tätä samaa kaavaa. Vain painetut näppäimet ja äänen asetukset vaihtelevat, mutta tapahtumien kulku on aina sama.
+
 ```mermaid
 sequenceDiagram
     Synthesizer ->> Ui: check_events()

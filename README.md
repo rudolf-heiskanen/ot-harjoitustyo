@@ -10,6 +10,7 @@ Koska Pythonille ei ole laadittu erityisen vakiintuneita tai helppokäyttöisiä
 - [Tyoaikakirjanpito](./dokumentaatio/tyoaikakirjanpito.md)
 - [Changelog](./dokumentaatio/changelog.md)
 - [Arkkitehtuurikaaviot](./dokumentaatio/arkkitehtuuri.md)
+- [Testausdokumentti](./dokumentaatio/arkkitehtuuri.md)
 
 ## Ensitoimenpiteet
 

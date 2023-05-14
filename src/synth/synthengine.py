@@ -44,7 +44,6 @@ class Synthengine:
         self.samplerate = samplerate
         self.buffersize = buffersize
         self.mode = "poly"
-        self.clock = 0
         self.volume = 1
         self.params = False
 

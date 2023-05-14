@@ -22,17 +22,8 @@ class TestSynthengine(unittest.TestCase):
         self.assertEqual("poly", self.engine.mode)
         self.assertEqual(1, self.engine.volume)
         self.assertEqual(2, self.engine.oscillator_select)
-        self.assertEqual(0, self.engine.clock)
         self.assertEqual((0, 0, 0), (len(self.engine.pressednotes), len(
             self.engine.playingnotes), len(self.engine.voices)))
-
-    # testing method set_time
-
-    def test_set_time(self):
-        moment = time()
-        self.engine.set_time(moment)
-
-        self.assertEqual(moment, self.engine.clock)
 
     # testing method play_notes
 

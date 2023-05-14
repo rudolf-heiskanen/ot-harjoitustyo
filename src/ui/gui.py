@@ -27,6 +27,7 @@ class Gui:
         self.w = 800
         self.params = params
         self.screen = pygame.display.set_mode((self.h, self.w))
+        pygame.display.set_caption('SyntsaSyntikka')
         self.manager = pygame_gui.UIManager((self.h, self.w))
 
         self.background = pygame.Surface((self.h, self.w))

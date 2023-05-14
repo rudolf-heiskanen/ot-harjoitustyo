@@ -19,8 +19,13 @@ Graafisella käyttöliittymällä voit muokata sitä, miltä soittimen ääni ku
 - Filter cutoff
     - Tällä liukusäätimellä saat valittua filtterin "cutoff-taajuuden". Se tarkoittaa sitä taajuutta, jonka ylä- tai alapuoliset taajuudet filtteri leikkaa pois äänestä. Tällä hetkellä filtteri leikkaa pois nimenomaan tätä rajaa korkeammat taajuudet, mutta ohjelmaan on tulossa nappi tämän vaihtamiselle. Tällä hetkellä soittimen äänessä kuuluu eräänlaista "rätinää", joka erottuu herkemmin jos leikkaa pois muut korkeat taajuudet. Tämä on jokin ongelma luultavasti pygamen audiokirjaston kanssa, joka toivottavasti, mutta ei välttämättä, saadaan korjattua kurssin aikana.
 
-## Pätkimisestä
+## Mahdollisista ongelmista
+
+### Pätkimisestä
 Jos soittimen ääni pätkii merkittävästi, ohjelman uudelleenkäynnistäminen auttaa asiaan. Ohjelman voi sulkea painamalla ESC, tai sulkemalla pygame-ikkunan ruksista.
 
-## Hiiren käytöstä
+### Näppäimistöstä
+Joillakin huonolaatuisemmilla näppäimistöillä, kuten fuksiläppärin näppäimistöllä, soitin ei pysty rekisteröimään hyvin montaa painallusta samalla kertaa. Tämä lienee näiden näppäimistöjen hardware-vika, sillä toisilla näppäimistöillä taas pystyy soittamaan vaikka jokaista oktaavin säveltä kerralla ongelmitta.
+
+### Hiiren käytöstä
 Saatat huomata, että jos soitat soitinta samalla, kun koitat säätää asetuksia hiirellä, hiiri ei liikukaan. Havaintojeni mukaan näin käy vain läppärin touchpadilla, ja varsinaisella erillisellä tietokonehiirellä ongelmia ei ole. 
